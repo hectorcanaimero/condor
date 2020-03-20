@@ -1,0 +1,22 @@
+[  
+    {
+        "campanha": { 
+            "titulo": "Ofertas Mundo de Chocolate", 
+            "code": 232961, 
+            "icon": "fas fa-shopping-basket",
+            "link": "https://www.condor.com.br/volta-as-aulas"
+        },
+        "eletro": { 
+            "titulo": "Ofertas da Eletro", 
+            "code": 11, 
+            "icon": "fas fa-shopping-basket",
+            "link": "/departamento/eletro"
+        },
+        "slug": { 
+            "titulo": "Ofertas da Dia Dia", 
+            "code": "geral", 
+            "icon": "fas fa-shopping-basket",
+            "link": "/departamento/alimentos"
+        }
+    } 
+]

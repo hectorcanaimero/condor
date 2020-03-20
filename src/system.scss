@@ -1,0 +1,32 @@
+/** Color */
+$cor-default-background: #f2faff;
+$cor-default-text: #444;
+$cor-footer-background: #447ab3;
+
+
+
+
+$color-B: #2e65a5;
+$color-C: #e64040;
+$color-D: #1e73be;
+$color-E: #ff8924;
+$color-init: #fb4e0a;
+$color-last: #1f4586;
+$color-box: #ffa200;
+$color-box-blog: #731e17;
+
+$cor-titulo: #940505dc;
+
+
+
+
+// Functions
+@mixin font-Weight($num) { font-weight: $num !important; }
+@mixin font-Size($num) { font-size: $num !important; }
+@mixin backGround($color) {
+    background: $color !important;
+}
+
+@mixin br-bt($line, $color) {
+    border-bottom: $line solid $color !important;
+}

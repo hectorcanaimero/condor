@@ -1,0 +1,40 @@
+.img-new {
+    height: 200px;
+    width: auto;
+}
+
+.cursor { cursor: pointer !important; }
+.cursor:hover { background: rgba(0, 0, 0, .6) !important; }
+
+.view {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (min-width: 768px) {
+    .view { height: 140px; }
+    .img-new {
+        //right: 130px;
+        height: 100%;
+        width: auto;
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 450px) {
+    .img-new {
+        height: auto;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .view {
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h3 { font-size: 1.3rem; }
+}

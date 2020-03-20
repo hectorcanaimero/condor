@@ -1,0 +1,22 @@
+@import '../../../../system.scss';
+
+
+.footer-A {
+    @include backGround($cor-footer-background);
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rgba-0{
+    background: rgba(0, 0, 0, .0) !important;
+    padding: 0.4rem 1.25rem !important;
+    a{
+        color: #fff !important;
+        font-weight: 500 !important;
+    }
+}

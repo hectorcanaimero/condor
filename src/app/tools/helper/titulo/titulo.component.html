@@ -1,0 +1,10 @@
+<h2 class="b-07 mb-4 pb-1 border-bottom" *ngIf="link">
+    <a [href]="link">
+        <i class="{{ icon }} mr-2" aria-hidden="true"></i>
+        <span>{{ titulo }}</span>
+    </a>
+</h2>
+<h2 class="b-07 mb-4 pb-1 border-bottom" *ngIf="!link">
+    <i class="{{ icon }} mr-2" aria-hidden="true"></i>
+    <span>{{ titulo }}</span>
+</h2>

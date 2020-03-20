@@ -1,0 +1,16 @@
+[
+    {
+        "ordem": "filter[order]=ordem",
+        "limit": "&limit",
+        "setting": { 
+            "model": "Settings",
+            "slug": "filter[where][slug]"
+        },
+        "product": {
+            "model": "Produtos",
+            "search": "filter[where][dsc_produto][like]",
+            "slug": "filter[where][slug]",
+            "campanha": "findCampanha?code"
+        }
+    }
+]

@@ -1,0 +1,27 @@
+<footer class="footer-A pt-3 pt-md-5">
+    <div class="container pb-md-5">
+        <div class="row ios">
+        <div class="col-12 d-md-none mb-4">
+            <!-- <app-menu-vertical [items]="json.mobile" [type]="1"></app-menu-vertical> -->
+        </div>  
+        <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
+            <img [src]="json.logo" alt="" class="img-fluid mb-4" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-lg-none">
+            <app-midia [items]="json.midia"></app-midia>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
+            <app-menu-vertical [items]="json.institucional" [type]="0"></app-menu-vertical>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
+            <app-menu-vertical [items]="json.servicos" [type]="0"></app-menu-vertical>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 d-none d-lg-block text-center">
+            <app-midia [items]="json.midia"></app-midia>
+        </div>
+        </div>
+    </div>
+    <div class="footer-B">
+        <p class="footer-copyright text-center mb-0 py-2 b-04" [innerHTML]="json.copyright"></p>
+    </div>
+</footer>

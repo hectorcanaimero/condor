@@ -1,0 +1,131 @@
+[
+    {
+        "top": {
+            "source": [
+                {
+                    "icon": "fas fa-book-open",
+                    "name": "Blog",
+                    "url": "https://teste.condor.com.br/blog",
+                    "type": "font"
+                },
+                {
+                    "icon": "./assets/images/intituto.svg",
+                    "name": "Instituto Joanir Zonta",
+                    "url": "/acoes-condor/instituto-joanir-zonta",
+                    "type": "svg"
+                },
+                {
+                    "icon": "fas fa-car-alt",
+                    "name": "Condor Auto Posto",
+                    "url": "#",
+                    "type": "font"
+                },
+                {
+                    "icon": "fas fa-download",
+                    "name": "Baixe o App",
+                    "url": "/fale-conosco/baixe-o-app/",
+                    "type": "font"
+                },
+                {
+                    "icon": "./assets/images/helmet.svg",
+                    "name": "Ricardo Zonta",
+                    "url": "#",
+                    "type": "svg"
+                }
+            ],
+            "institucional": {"icon": "fas fa-briefcase", "titulo": "Institucional"},
+            "conosco": {"icon": "fas fa-briefcase", "titulo": "Fale Conosco"},
+            "megaInstitucional": [
+                {
+                    "titulo": "Institucional",
+                    "source": [
+                        { "nome": "Nossa história", "url": "/institucional/nossa-historia" },
+                        { "nome": "Nossa estrutura", "url": "/institucional/nossa-estrutura" },
+                        { "nome": "Condor e seu fundador", "url": "/institucional/o-condor-e-seu-fundador" },
+                        { "nome": "Prêmios", "url": "/institucional/premios-e-destaques" },
+                        { "nome": "Tour virtual", "url": "/institucional/tour-virtual" },
+                        { "nome": "Notícias", "url": "/imprensa" }
+                    ]
+                },
+                {
+                    "titulo": "Ações Condor",
+                    "source": [
+                        { "nome": "Universidade Corporativa Condor", "url": "/acoes-condor/universidade-corporativa-condor" },
+                        { "nome": "Sustentabilidade", "url": "/acoes-condor/sustentabilidade" },
+                        { "nome": "Cultura e Lazer", "url": "/acoes-condor/cultura-e-lazer" },
+                        { "nome": "Instituto Joanir Zonta", "url": "/acoes-condor/instituto-joanir-zonta" },
+                        { "nome": "Campanha Solidária Condor", "url": "/acoes-condor/campanha-solidaria-condor" },
+                        { "nome": "Jantar dos Fornecedores Condor", "url": "/jantar-fornecedores" }
+                    ]
+                },
+                {
+                    "titulo": "Serviços Financeiros",
+                    "source": [
+                        { "nome": "Megafacilidades Condor", "url": "/servicos-financeiro/megafacilidades-condor" },
+                        { "nome": "Cartão Condor", "url": "/servicos-financeiro/cartao-condor" },
+                        { "nome": "Carnê Condor", "url": "/servicos-financeiro/carne-condor" },
+                        { "nome": "Formas de pagamento", "url": "/servicos-financeiro/formas-de-pagamento" },
+                        { "nome": "CPF na Nota", "url": "/servicos-financeiro/cpf-na-nota" },
+                        { "nome": "Cata moeda", "url": "/servicos-financeiro/cata-moeda" }
+                    ]
+                },
+                {
+                    "titulo": "Para sua empresa",
+                    "source": [
+                        { "nome": "Cartão Condor Card Mais Alimentação", "url": "/para-sua-empresa/cartao-condor-card-mais-alimentacao" },
+                        { "nome": "Cartão Condor Card Mais Convênio", "url": "/para-sua-empresa/cartao-condor-card-mais-convenio" },
+                        { "nome": "Cartão Condor Card Mais Empresa", "url": "/para-sua-empresa/cartao-condor-card-mais-empresarial" },
+                        { "nome": "Cartão-presente Condor", "url": "/para-sua-empresa/cartao-presente-condor" }
+                    ]
+                },
+                {
+                    "titulo": "Demostrativo Financeiro",
+                    "source":[
+                        { 
+                            "nome": "Demons. Financeiro  2016",
+                            "url": "https://teste.condor.com.br/news/wp-content/uploads/2019/12/REA_031-2017.pdf",
+                            "external": true
+                        },
+                        { 
+                            "nome": "Demons. Financeiro  2017",
+                            "url": "https://teste.condor.com.br/news/wp-content/uploads/2019/12/REA_031-2017.pdf",
+                            "external": true
+                        },
+                        { 
+                            "nome": "Demons. Financeiro  2018",
+                            "url": "https://teste.condor.com.br/news/wp-content/uploads/2019/12/REA-022-2019_Condor_31-12-2018.pdf",
+                            "external": true
+                        }
+                    ]
+                }
+            ],
+            "megaConosco": [
+                {
+                    "titulo": "Atendimento ao Cliente SAC",
+                    "source": [
+                        { "nome": "Atendimento ao Cliente SAC", "url": "/sac" }
+                    ]
+                },
+                {
+                    "titulo": "Trabalhe conosco",
+                    "source": [
+                        { "nome": "Trabalhe conosco", "url": "/fale-conosco/trabalhe-conosco" }
+                    ]
+                },
+                {
+                    "titulo": "Disque-denúncia",
+                    "source": [
+                        { "nome": "Disque-denúncia", "url": "/fale-conosco/disque-denuncia" }
+                    ]
+                },
+                {
+                    "titulo": "Fornecedores",
+                    "source": [
+                        { "nome": "Como ser um fornecedor Condor", "url": "/fale-conosco/como-ser-um-fornecedor-condor" },
+                        { "nome": "Prêmio Top Fornecedores Condor", "url": "/jantar-fornecedores/top-fornecedores/2019" }
+                    ]
+                }
+            ]
+        }
+    }
+]

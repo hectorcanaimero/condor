@@ -1,0 +1,8 @@
+<a [routerLink]="['institucional', item.slug]" class="text-muted b-06">
+    <div class="view z-depth-3">
+        <img [src]="imagem" class="img-new" alt="{{ item.title?.rendered }}">
+        <div class="mask flex-center rgba-black-light cursor">
+            <h3 class="b-07 white-text text-center text-shadow">{{ item.title?.rendered }}</h3>
+        </div>
+    </div>
+</a>

@@ -1,0 +1,11 @@
+@import '../../../../system.scss';
+
+h2, a{ color: $cor-titulo !important; }
+
+@media(max-width: 450px) {
+    h2{ font-size: 1.5rem; padding: 0 15px; }
+}
+
+@media(max-width: 375px) {
+    h2{ font-size: 1.3rem; }
+}

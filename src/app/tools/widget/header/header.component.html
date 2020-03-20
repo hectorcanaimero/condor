@@ -1,0 +1,28 @@
+<header class="sticky-top d-none d-md-block">
+    <div id="top-header" class="header-A py-1 d-none d-lg-block">
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark ie-nav" [containerInside]="false" >
+            <mdb-navbar-brand>
+                <a class="navbar-brand" [routerLink]="['']"></a>
+            </mdb-navbar-brand>
+            <links>
+                <ul class="navbar-nav mx-auto">
+                    <app-menu-top [items]="json.top.megaInstitucional" [head]="json.top.institucional"></app-menu-top>
+                    <app-menu-top [items]="json.top.megaConosco" [head]="json.top.conosco"></app-menu-top>
+                    <li class="nav-item waves-light" *ngFor="let item of json.top.source">
+                        <a class="nav-link py-N header-menu" [routerLink]="[item.url]" *ngIf="item.inter" >
+                            <i class="{{ item.icon }}" *ngIf="item.type === 'font'"></i>
+                            <img [src]="item.icon" height="20px" alt="{{ item.name }}" *ngIf="item.type === 'svg'" />
+                            {{ item.name }}
+                        </a>
+                        <a class="nav-link py-N header-menu" href="{{ item.url }}" *ngIf="!item.inter" 
+                            rel="noopener" target="_blank" >
+                            <i class="{{ item.icon }}" *ngIf="item.type === 'font'"></i>
+                            <img [src]="item.icon" height="20px" alt="{{ item.name }}" *ngIf="item.type === 'svg'" />
+                            {{ item.name }}
+                        </a>
+                    </li>
+                </ul>
+            </links>
+        </mdb-navbar>
+    </div>
+</header>

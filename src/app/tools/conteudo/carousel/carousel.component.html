@@ -1,0 +1,34 @@
+<section id="carousel" class="py-0 py-md-3">
+    <div class="container">
+        <div class="row ios">
+            <div class="col-md-8 col-lg-8 mb-1">
+                <mdb-carousel
+                    [isControls]="false"
+                    class="carousel slide carousel-fade z-depth-1"
+                    [interval]="7500"
+                    [animation]="'fade'"
+                >
+                    <mdb-carousel-item *ngFor="let l of itemsLeft">
+                    <app-image [post]="l" size="730x350" [ngClass]="{'d-none': itemsLeft.length < 1}"></app-image>
+                    </mdb-carousel-item>
+                </mdb-carousel>
+                
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <!-- <app-departamento [code]="ofertas.code" [title]="ofertas.titulo"
+                [icon]="ofertas.icon" [link]="ofertas.link" class="d-md-none">
+            </app-departamento> -->
+                <mdb-carousel
+                    class="carousel slide carousel-fade z-depth-1"
+                    [interval]="7000"
+                    [animation]="'fade'"
+                    [isControls]="false"
+                >
+                    <mdb-carousel-item *ngFor="let r of itemsRight">
+                    <app-image [post]="r" size="730x350"></app-image>
+                    </mdb-carousel-item>
+                </mdb-carousel>
+            </div>
+        </div>
+    </div>
+</section>

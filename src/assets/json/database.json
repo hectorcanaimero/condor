@@ -1,0 +1,46 @@
+[
+    {
+        "news": {
+            "titulo": "Condor. Há 45 anos faz parte da família",
+            "icon": "fas fa-newspaper"
+        },
+        "blog": {
+            "titulo": "Nosso Blog",
+            "icon": "fas fa-rss",
+            "qtd": 3,
+            "col": 4,
+            "btntitulo": "ver todos os posts",
+            "btnurl": "https://www.condor.com.br/blog"
+        },
+        "footer": {
+            "logo": "./assets/images/logo-footer.png",
+            "copyright": "© 2020 Todos os direitos reservados. <a href='https://www.condor.com.br' class='white-text'>Condor Super Center LTA</a>",
+            "mobile": [
+                { "name": "Fale Conosco 0800 416555", "icon": "phone", "url": "" },
+                { "name": "Trabalhe Conosco", "icon": "briefcase", "url": "" },
+                { "name": "Contato", "icon": "headset", "url": "" }
+            ],
+            "institucional": [
+                { "name": "Institucional", "url": "" },
+                { "name": "Ações Condor", "url": "" },
+                { "name": "Serviços financeiros", "url": "" },
+                { "name": "Para sua empresa", "url": "" },
+                { "name": "Demostrativo financeiro", "url": "" }
+            ],
+            "servicos": [
+                { "name": "SAC", "url": "sac" },
+                { "name": "Trabalhe conosco", "url": "fale-conosco/trabalhe-conosco" },
+                { "name": "Disque-denúncia", "url": "fale-conosco/disque-denuncia" },
+                { "name": "Imprensa", "url": "fale-conosco/imprensa" },
+                { "name": "Lojas", "url": "lojas" }
+            ],
+            "midia": [
+                { "icon": "fab fa-facebook", "url": "https://www.facebook.com/RedeCondor/" },
+                { "icon": "fab fa-twitter", "url": "https://twitter.com/RedeCondor" },
+                { "icon": "fab fa-instagram", "url": "https://www.instagram.com/redecondor/" },
+                { "icon": "fab fa-youtube", "url": "https://www.youtube.com/user/redecondor" },
+                { "icon": "fab fa-linkedin", "url": "https://www.linkedin.com/company/condor-super-center-ltda./" }
+            ]
+        }
+    }
+]

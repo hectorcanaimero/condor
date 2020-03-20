@@ -1,0 +1,10 @@
+<section id="PostInstitucional" class="py-3 py-md-5">
+    <div class="container">
+        <app-titulo [icon]="json.icon" [titulo]="json.titulo"></app-titulo>
+        <div class="row ios">
+            <div class="col-12 col-md-6 col-lg-3 mb-3" *ngFor="let p of pages">
+                <app-imprensa [items]="p.id"></app-imprensa>
+            </div>
+        </div>
+    </div>
+</section>

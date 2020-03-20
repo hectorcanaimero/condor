@@ -1,0 +1,94 @@
+@import './system.scss';
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap");
+
+
+
+body {
+    font-family: "Nunito", sans-serif !important;
+    background: $cor-default-background;
+    color: $cor-default-text !important;
+}
+
+
+// Font-Weight
+.b-01{ @include font-Weight(100); }
+.b-02{ @include font-Weight(200); }
+.b-03{ @include font-Weight(300); }
+.b-04{ @include font-Weight(400); }
+.b-05{ @include font-Weight(500); }
+.b-06{ @include font-Weight(600); }
+.b-07{ @include font-Weight(700); }
+.b-08{ @include font-Weight(800); }
+.b-09{ @include font-Weight(900); }
+
+// Font-size
+.f-06{ @include font-Size(.6rem); }
+.f-07{ @include font-Size(.7rem); }
+.f-08{ @include font-Size(.8rem); }
+.f-09{ @include font-Size(.9rem); }
+
+.btn-rounded {
+    border-radius: 10em !important;
+}
+.btn-condor {
+    @include backGround($color-D);
+    color: #fff !important;
+    font-weight: 700 !important;
+
+    :hover {
+        @include backGround($cor-footer-background);
+    }
+}
+
+////////////////////////////////////
+  ///      NavBar Header      ///
+///////////////////////////////////
+.navbar {
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,.0), 0 0px 0px 0 rgba(0,0,0,.0) !important;
+    .mega-dropdown {
+        width: 100% !important;
+        position: static !important;
+    }
+}
+
+
+////////////////////////////////////
+  ///    Conteudo Wordpress    ///
+///////////////////////////////////
+#conteudo {
+    text-align: justify;
+    .has-text-align-center { text-align: center !important; }
+    h1, h2, h3, h4, h5, h6 { @include font-Weight(700); }
+    strong { @include font-Weight(800); }
+    figure {
+        .wp-caption.aligncenter { margin: 0 auto 30px; }
+        img {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            vertical-align: top !important;
+        }
+        .wp-caption-text {
+            text-align: center;
+            background: #f8f8f8;
+            padding: 5px 0;
+        }
+    }
+    .resaltador {
+        background-color: #d3d3d3 !important;
+        border-radius: 10px;
+        padding: 10px 15px;
+        font-size: .85rem !important;
+    }
+    .entry .entry-content .wp-block-columns { flex-wrap: nowrap !important; }
+    .entry .entry-content > * > *:first-child,
+    .entry .entry-summary > * > *:first-child { margin-top: 0 !important; }
+    .wp-block-columns { display: flex !important; }
+    .wp-block-column { flex-grow: 0 !important; }
+    .wp-block-column {
+        flex-grow: 1 !important;
+        min-width: 0 !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+}

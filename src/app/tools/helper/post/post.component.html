@@ -1,0 +1,14 @@
+<mdb-card>
+    <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+        <mdb-card-img appLazyLoad [src]="imagem" alt="{{ post.title?.rendered }}"></mdb-card-img>
+        <a href="{{ post.link }}" target="_blank">
+            <div class="mask"></div>
+        </a>
+    </div>
+    <mdb-card-body>
+        <mdb-card-title>
+            <h5 class="b-07">{{ post.title?.rendered }}</h5>
+        </mdb-card-title>
+        <mdb-card-text class="d-md-none"> {{ post.title?.rendered }}</mdb-card-text>
+    </mdb-card-body>
+</mdb-card>

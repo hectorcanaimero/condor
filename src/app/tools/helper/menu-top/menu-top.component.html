@@ -1,0 +1,26 @@
+<li class="nav-item dropdown mega-dropdown" dropdown style="width: auto!important;" >
+    <a dropdownToggle type="button" class="nav-link py-N header-menu dropdown-toggle waves-light" 
+        mdbWavesEffect >
+        <i class="{{ head.icon }}"></i> {{ head.titulo }}
+    </a>
+    <div class="dropdown-menu mega-menu v-2 bg-mega w-100">
+        <div class="container-fluid">
+            <div class="d-flex flex-row w-100">
+                <div class="w-100" *ngFor="let item of items">
+                    <h6 class="mb-3 text-underline" >
+                        <a href="#" class="sub-title white-text text-uppercase b-08">
+                            {{ item.titulo }}</a>
+                    </h6>
+                    <ul class="list-unstyled">
+                        <li *ngFor="let a of item.source">
+                            <a *ngIf="a.external" class="menu-item white-text" [href]="a.url"
+                            rel="noopener" target="_blank"> {{ a.nome }} </a>
+                            <a *ngIf="!a.external" class="menu-item white-text" [routerLink]="[a.url]" >
+                                {{ a.nome }} </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
