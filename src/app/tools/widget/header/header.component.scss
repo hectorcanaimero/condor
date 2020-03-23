@@ -1,24 +1,15 @@
 @import "../../../../system.scss";
 
-.text-underline {
-    text-decoration: underline;
-}
+.text-underline { text-decoration: underline; }
+.bg-mega { @include backGround(#f2faff); }
+.header-A { background: $cor-footer-background; }
+.bg-header { background: $color-B; }
+.brand { width: 180px; margin-top: 5px; }
 
-.bg-mega {
-    @include backGround(#f2faff);
-}
 
-.header-A {
-    background: $cor-footer-background;
-}
 
-.header-B {
-    background: $color-B;
-}
 
-.nav-item:hover{
-    background: rgba(0, 0, 0, .2);
-}
+.nav-item:hover{ background: rgba(0, 0, 0, .2); }
 
 .py-N {
     padding-right: 0.3rem !important;

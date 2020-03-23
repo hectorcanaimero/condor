@@ -1,16 +1,17 @@
 [
     {
-        "ordem": "filter[order]=ordem",
+        "ordem": "filter[order]=",
         "limit": "&limit",
         "setting": { 
             "model": "Settings",
             "slug": "filter[where][slug]"
         },
         "product": {
-            "model": "Produtos",
+            "model": "/Produtos",
             "search": "filter[where][dsc_produto][like]",
             "slug": "filter[where][slug]",
-            "campanha": "findCampanha?code"
+            "campanha": "/findCampanha?code",
+            "menuDepartamento": "/menuDepartamento"
         }
     }
 ]

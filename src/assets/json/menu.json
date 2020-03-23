@@ -126,6 +126,47 @@
                     ]
                 }
             ]
+        },
+        "header":{
+            "source": [
+                {
+                  "icon": "./assets/images/whats_icon.svg",
+                  "name": "Radar de Ofertas",
+                  "url": "/institucional/radar-de-ofertas"
+                },
+                {
+                  "icon": "./assets/images/smile.png",
+                  "name": "Clube Condor",
+                  "url": "https://promocoescondor.com.br",
+                  "external": true
+                },
+                {
+                  "icon": "./assets/images/condor-card.png",
+                  "name": "Cartão Condor",
+                  "url": "/servicos-financeiro/cartao-condor"
+                }
+            ]
+        },
+        "menuOfertas": {
+            "titulo": "Todos os Departamentos",
+            "source": [
+                { "name": "Alimentos", "url": "/departamento/alimentos" },
+                { "name": "Eletro", "url": "/departamento/eletro" },
+                { "name": "O condor mais Próximo", "url": "/lojas" },
+                { "name": "Tabloide On-line", "url": "ofertas/tabloide-online" }
+            ],
+            "icono": [
+                { 
+                    "name": "Ofertas da",
+                    "url": "https://www.youtube.com/user/redecondor",
+                    "img": "./assets/images/tv.png"
+                },
+                { 
+                    "name": "",
+                    "url": "http://www.familiacondor.com.br",
+                    "img": "./assets/images/familia.png"
+                }
+            ]
         }
     }
 ]

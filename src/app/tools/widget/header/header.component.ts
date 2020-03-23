@@ -27,4 +27,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     if (this.jsonSubscription) { this.jsonSubscription.unsubscribe(); }
   }
 
+  getSearch(e: any) {
+    console.log(e.target.value);
+  }
 }

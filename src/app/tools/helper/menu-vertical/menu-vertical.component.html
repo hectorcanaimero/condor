@@ -1,15 +1,9 @@
-<nav class="nav flex-column px-2"  *ngIf="type === 0">
+<nav class="nav flex-column px-2">
     <a *ngFor="let item of items" 
-        class="nav-link active white-text border-bottom" 
+        class="nav-link {{ screen }}" 
         [href]="item.url">
-        {{item.name}}
-    </a>
-</nav>
-<nav class="nav flex-column px-2" *ngIf="type === 1">
-    <a *ngFor="let item of items" 
-        class="nav-link active white-text border-bottom" 
-        [href]="item.url">
-        <mdb-icon fas icon="{{ item.icon }}" class="mr-1"></mdb-icon>
-        {{item.name}}
+        <mdb-icon fas icon="{{ item.icon }}" class="mr-1" 
+            *ngIf="type === true"></mdb-icon>
+        {{item.nome}}
     </a>
 </nav>

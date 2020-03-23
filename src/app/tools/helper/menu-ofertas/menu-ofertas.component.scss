@@ -1,0 +1,51 @@
+@import '../../../../system.scss';
+
+.nav-item:hover{
+    background: rgba($color: #000000, $alpha: .10);
+}
+
+.menuBack { @include backGround($color-C); }
+
+.bg-mega { @include backGround(#f2faff); }
+
+.rot {
+    transform: rotate(350deg);
+    -ms-transform: rotate(350deg);
+    -moz-transform: rotate(350deg);
+    -webkit-transform: rotate(350deg);
+    -o-transform: rotate(350deg);
+}
+
+#iconsrr {
+    display: flex;
+}
+
+.title-mega {
+    color: $color-C;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.border-right-menu {
+    border-right: 1px solid #999 !important;
+}
+
+.border-left-menu {
+    border-left: 1px solid #999 !important;
+}
+
+@media (max-width: 991px) {
+    .border-right-menu {
+        border-right: 0px solid #999 !important;
+    }
+
+    .border-left-menu {
+        border-left: 0px solid #999 !important;
+    }
+
+    #iconsrr {
+        display: none;
+    }
+}

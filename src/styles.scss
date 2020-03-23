@@ -55,6 +55,12 @@ body {
 ////////////////////////////////////
   ///    Conteudo Wordpress    ///
 ///////////////////////////////////
+.post-titulo{
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    padding-bottom: .3rem;
+}
+
 #conteudo {
     text-align: justify;
     .has-text-align-center { text-align: center !important; }

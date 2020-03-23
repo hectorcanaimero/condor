@@ -8,11 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MenuVerticalComponent implements OnInit {
 
   @Input() items: any = [];
-  @Input() type: number = 0;
+  @Input() type: boolean = false;
+  @Input() screen: string = 'dark';
 
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      console.log(this.items);
+    }, 1000);
+    this.type = false;
   }
 
 }

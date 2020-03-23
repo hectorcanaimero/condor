@@ -15,6 +15,8 @@ import { NewsComponent } from './conteudo/news/news.component';
 import { CarouselComponent } from './conteudo/carousel/carousel.component';
 import { ImageComponent } from './helper/image/image.component';
 import { MenuTopComponent } from './helper/menu-top/menu-top.component';
+import { MenuOfertasComponent } from './helper/menu-ofertas/menu-ofertas.component';
+import { SidebarComponent } from './helper/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { MenuTopComponent } from './helper/menu-top/menu-top.component';
     BlogComponent, TituloComponent,
     ImprensaComponent, NewsComponent,
     CarouselComponent, ImageComponent,
-    MenuTopComponent
+    MenuTopComponent, MenuOfertasComponent,
+    SidebarComponent
   ],
   exports: [
     ProductComponent, PostComponent,
@@ -33,7 +36,8 @@ import { MenuTopComponent } from './helper/menu-top/menu-top.component';
     BlogComponent, TituloComponent,
     ImprensaComponent, NewsComponent,
     CarouselComponent, ImageComponent,
-    MenuTopComponent
+    MenuTopComponent, MenuOfertasComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule,

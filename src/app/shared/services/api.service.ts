@@ -16,7 +16,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   private Query<T>(query: string) {
-    const sql: string = url + query + token;
+    const sql: string = url + query;
     return this.http.get<T>(sql)
     .pipe(tap(data => data)).pipe(take(1));
   }

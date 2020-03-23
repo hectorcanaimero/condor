@@ -1,0 +1,47 @@
+<mdb-navbar SideClass="navbar py-2 navbar-expand-lg navbar-dark red ie-nav d-none d-lg-block"
+    [containerInside]="true" id="menuOfertas">
+    <mdb-navbar-brand>
+        <a class="navbar-brand" href="http://www.familiacondor.com.br" target="_blank" >
+        <img src="./assets/images/frontend/familia.png" width="60px"
+            alt="familia condor" class="d-lg-none d-xl-none" />
+        </a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav  pr-3 border-right-menu justify-content-start">
+            <li class="nav-item dropdown mega-dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" mdbWavesEffect
+                class="nav-link b-08 dropdown-toggle waves-light" >
+                    Todos os Departamentos<span class="caret"></span>
+                </a>
+                <div class="dropdown-menu mega-menu v-2 row z-depth-1 bg-mega w-100">
+                    <div class="container">
+                        <div class="row mx-md-4 mx-1">
+                            <div class="col-xl-3" *ngFor="let menu of departamento; let i = index">
+                                <a *ngFor="let item of menu; let itemIndex = index" 
+                                    [routerLink]="['/departamento', item.slug]">
+                                    <p class="mb-0 border-bottom pb-1 b-05">
+                                        <span class="ml-2">{{ item.nome }}</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav mx-auto">
+        <li class="nav-item waves-light px-0 px-xl-2" mdbWavesEffect
+            *ngFor="let item of items.source">
+            <a class="nav-link b-06" [routerLink]="[item.url]">{{ item.name }}</a>
+        </li>
+        </ul>
+        <ul class="navbar-nav mr-auto border-left-menu pl-3" id="iconsrr">
+            <li class="nav-item waves-light mr-3" mdbWavesEffect *ngFor="let i of items.icono">
+                <a class="nav-link b-08" [href]="i.url" target="_blank">
+                    {{ i.name }}
+                    <img [src]="i.img" class="img-fluid" alt="Image padrão" />
+                </a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>

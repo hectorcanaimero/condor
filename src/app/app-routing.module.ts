@@ -9,6 +9,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomeModule),
     runGuardsAndResolvers: 'always'
   },
+  {
+    path: ':id',
+    loadChildren: () => import('./pages/intra/intra.module').then( m => m.IntraModule),
+    runGuardsAndResolvers: 'always'
+  },
 ];
 
 @NgModule({

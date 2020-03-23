@@ -12,27 +12,31 @@
             "btntitulo": "ver todos os posts",
             "btnurl": "https://www.condor.com.br/blog"
         },
+        "sidebar": {
+            "news": "Últimas Noticias",
+            "menu": "Menu"
+        },
         "footer": {
             "logo": "./assets/images/logo-footer.png",
             "copyright": "© 2020 Todos os direitos reservados. <a href='https://www.condor.com.br' class='white-text'>Condor Super Center LTA</a>",
             "mobile": [
-                { "name": "Fale Conosco 0800 416555", "icon": "phone", "url": "" },
-                { "name": "Trabalhe Conosco", "icon": "briefcase", "url": "" },
-                { "name": "Contato", "icon": "headset", "url": "" }
+                { "nome": "Fale Conosco 0800 416555", "icon": "phone", "url": "" },
+                { "nome": "Trabalhe Conosco", "icon": "briefcase", "url": "" },
+                { "nome": "Contato", "icon": "headset", "url": "" }
             ],
             "institucional": [
-                { "name": "Institucional", "url": "" },
-                { "name": "Ações Condor", "url": "" },
-                { "name": "Serviços financeiros", "url": "" },
-                { "name": "Para sua empresa", "url": "" },
-                { "name": "Demostrativo financeiro", "url": "" }
+                { "nome": "Institucional", "url": "" },
+                { "nome": "Ações Condor", "url": "" },
+                { "nome": "Serviços financeiros", "url": "" },
+                { "nome": "Para sua empresa", "url": "" },
+                { "nome": "Demostrativo financeiro", "url": "" }
             ],
             "servicos": [
-                { "name": "SAC", "url": "sac" },
-                { "name": "Trabalhe conosco", "url": "fale-conosco/trabalhe-conosco" },
-                { "name": "Disque-denúncia", "url": "fale-conosco/disque-denuncia" },
-                { "name": "Imprensa", "url": "fale-conosco/imprensa" },
-                { "name": "Lojas", "url": "lojas" }
+                { "nome": "SAC", "url": "sac" },
+                { "nome": "Trabalhe conosco", "url": "fale-conosco/trabalhe-conosco" },
+                { "nome": "Disque-denúncia", "url": "fale-conosco/disque-denuncia" },
+                { "nome": "Imprensa", "url": "fale-conosco/imprensa" },
+                { "nome": "Lojas", "url": "lojas" }
             ],
             "midia": [
                 { "icon": "fab fa-facebook", "url": "https://www.facebook.com/RedeCondor/" },

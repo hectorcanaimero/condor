@@ -1,6 +1,6 @@
 <header class="sticky-top d-none d-md-block">
     <div id="top-header" class="header-A py-1 d-none d-lg-block">
-        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark ie-nav" [containerInside]="false" >
+        <mdb-navbar SideClass="navbar py-0 navbar-expand-lg navbar-dark ie-nav" [containerInside]="false" >
             <mdb-navbar-brand>
                 <a class="navbar-brand" [routerLink]="['']"></a>
             </mdb-navbar-brand>
@@ -25,4 +25,40 @@
             </links>
         </mdb-navbar>
     </div>
+    <div id="header" class="pt-3 pb-2 bg-header">
+        <div class="container">
+            <div class="row ios">
+                <!-- <div class="col-1 col-md-1 d-lg-none">
+                    <a class="white-text text-left" (click)="toogle()">
+                        <mdb-icon fas icon="bars" [hidden]="X"></mdb-icon>
+                        <mdb-icon fas icon="times" [hidden]="!X"></mdb-icon>
+                    </a>
+                </div> -->
+                <div class="col-10 col-md-11 col-lg-3">
+                    <a [routerLink]="['']">
+                        <img src="./assets/images/logo.png" alt="Logo Condor" 
+                            class="brand mx-auto d-block"/>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-5 d-none d-lg-block">
+                    <input class="form-control rounded-pill px-3 mt-2" type="text" placeholder="O que você está procurando?" (keyup.enter)="getSearch($event)" />
+                </div>
+                <div class="col-7 col-md-3 col-lg-4 col-xl-4 d-none d-lg-block">
+                    <ul class="nav justify-content-end" style="margin-top: -5px!important">
+                        <li class="nav-item" *ngFor="let item of json.header.source">
+                            <a class="nav-link white-text px-1 b-06 f-08 text-center i-cartao" [href]="item.url" rel="noopener" *ngIf="item.external">
+                                <img [src]="item.icon" height="25px" alt="{{ item.name }}" /><br />
+                                <span class="d-none d-lg-block mt-2">{{ item.name }}</span>
+                            </a>
+                            <a class="nav-link white-text px-1 b-06 f-08 text-center i-cartao" [routerLink]="[item.url]" *ngIf="!item.external">
+                                <img [src]="item.icon" height="25px" alt="{{ item.name }}" /><br />
+                                <span class="d-none d-lg-block mt-2">{{ item.name }}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-menu-ofertas [items]="json.menuOfertas"></app-menu-ofertas>
 </header>

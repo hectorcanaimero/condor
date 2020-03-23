@@ -1,0 +1,11 @@
+<div class="widget menu" *ngIf="menu.source.length > 0">
+    <h5>{{ json.menu }} {{ this.section }}</h5>
+    <app-menu-vertical [items]="menu.source" screen="light"></app-menu-vertical>
+</div>
+<div class="widget news" *ngIf="news.length > 0">
+    <h5>{{ json.news }}</h5>
+    <a [routerLink]="['/imprensa/', n.slug]" mdbWavesEffect *ngFor="let n of news"  
+        class="waves-light f-09 b-07 text-muted pl-2 border-bottom pb-2 mb-2 text-justify">
+        {{ n.title?.rendered }}
+    </a>
+</div>
